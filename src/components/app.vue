@@ -1,5 +1,5 @@
 <template>
-  <f7-app v-bind="f7params">
+  <f7-app v-bind="f7params" >
 
   <!-- Left panel with cover effect-->
   <f7-panel left cover dark>
@@ -26,10 +26,10 @@
   <!-- Views/Tabs container -->
   <f7-views tabs class="safe-areas">
     <!-- Tabbar for switching views-tabs -->
-    <f7-toolbar tabbar icons bottom>
-      <f7-link tab-link="#view-home" tab-link-active icon-ios="f7:house_fill" icon-md="material:home" text="Home"></f7-link>
-      <f7-link tab-link="#view-catalog" icon-ios="f7:square_list_fill" icon-md="material:view_list" text="Catalog"></f7-link>
-      <f7-link tab-link="#view-settings" icon-ios="f7:gear" icon-md="material:settings" text="Settings"></f7-link>
+    <f7-toolbar tabbar labels bottom>
+      <f7-link tab-link="#view-home" tab-link-active icon-ios="f7:house_fill" icon-aurora="f7:house_fill" icon-md="material:home" text="Home"></f7-link>
+      <f7-link tab-link="#view-catalog" icon-ios="f7:square_list_fill" icon-aurora="f7:square_list_fill" icon-md="material:view_list" text="Catalog"></f7-link>
+      <f7-link tab-link="#view-settings" icon-ios="f7:gear" icon-aurora="f7:gear" icon-md="material:settings" text="Settings"></f7-link>
     </f7-toolbar>
 
     <!-- Your main view/tab, should have "view-main" class. It also has "tab-active" class -->
@@ -102,9 +102,8 @@
 
       // Framework7 Parameters
       const f7params = {
-        name: 'framework7-v8-vue-single-view', // App name
+        name: 'framework7-v8-vue-tab-view', // App name
         theme: 'auto', // Automatic theme detection
-
 
 
 
